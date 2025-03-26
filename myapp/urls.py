@@ -1,7 +1,9 @@
 from django.urls import path
-from .views import index, dggfd
+from .views import index, inde,ind
 
 urlpatterns = [
-    path('', index, name='index'),
-     path('dggfd', dggfd, name='dggfd'),
+    path('inde/', inde, name='inde'), 
+    path('ind', ind, name='ind'), 
+    path('', index, name='index'), 
 ]
+
