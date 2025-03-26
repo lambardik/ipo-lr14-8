@@ -55,8 +55,8 @@ ROOT_URLCONF = 'magazodejdy.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
+        'DIRS': [BASE_DIR / "templates"],  # Путь к глобальной папке с шаблонами
+        'APP_DIRS': True,  # Включено автоматическое использование папки templates внутри приложений
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',

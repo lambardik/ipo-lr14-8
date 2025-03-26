@@ -1,9 +1,10 @@
 from django.urls import path
-from .views import index, inde,ind
+from .views import index, tema,me
 
 urlpatterns = [
-    path('inde/', inde, name='inde'), 
-    path('ind', ind, name='ind'), 
+    path('me/', me, name='me'), 
+    path('tema/', tema, name='tema'), 
     path('', index, name='index'), 
+    
 ]
 
